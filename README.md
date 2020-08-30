@@ -1,12 +1,10 @@
 # Signal Plotter
 
-It's just a simple Python program that uses tkinter and turtle to plot digital
-Signals in simple encodings like RZ, NRZ-L, NRZ-I, Manchester and Differential Manchester
+It's just a simple Python program that uses tkinter and turtle to plot digital Signals in simple encodings like RZ, NRZ-L, NRZ-I, Manchester and Differential Manchester
 
-Made it because in true CSE Student fashion, I decided to automate a 2-min homework
-assignment which took an hour to make
+Made it because in true CSE Student fashion, I decided to automate in an hour what would've been a 2 minute homework assignment
 
-##### Example
+#### Example
 
 Input is given as 
 
@@ -15,4 +13,3 @@ Input is given as
 And output can be seen in a new window as
 
 ![output_example](https://github.com/OverPoweredDev/SignalPlotter/blob/master/images/2.png?raw=true)
-
