@@ -10,9 +10,9 @@ assignment which took an hour to make
 
 Input is given as 
 
-![input_example](https://github.com/OverPoweredDev/SignalPlotter/blob/images/1.png?raw=true)
+![input_example](https://github.com/OverPoweredDev/SignalPlotter/blob/master/images/1.png?raw=true)
 
 And output can be seen in a new window as
 
-![output_example](https://github.com/OverPoweredDev/SignalPlotter/blob/images/2.png?raw=true)
+![output_example](https://github.com/OverPoweredDev/SignalPlotter/blob/master/images/2.png?raw=true)
 
