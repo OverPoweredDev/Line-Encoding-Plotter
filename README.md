@@ -1,3 +1,5 @@
+![banner](https://github.com/OverPoweredDev/SignalPlotter/blob/master/images/bannerproj.png?raw=true)
+
 # Signal Plotter
 
 It's just a simple Program that uses either python or C++ to plot digital Signals in simple encodings like RZ, NRZ-L, NRZ-I, Manchester and Differential Manchester
