@@ -24,6 +24,13 @@ C++ Implementation made with graphics.h
 
 It was a massive pain to set this up, that library is *archaic*
 
+To run this, open the terminal at location 'destinationdirectory/cpp_implementation' and use the following commands:
+
+```
+destinationdirectory/cpp_implementation$ g++ plotter.cpp -o plotter -lgraph
+destinationdirectory/cpp_implementation$ ./plotter
+```
+
 #### Example
 
 Input is given as
