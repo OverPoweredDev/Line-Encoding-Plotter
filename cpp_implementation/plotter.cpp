@@ -23,7 +23,7 @@ string getSignal() {
 int getEncoding() {
     int choice;
     cout
-            << "Choose a type of Encoding\n1) Unipolar NRZ\n2) Polar NRZ\n3) NRZ Inverted\n4) RZ\n5) Manchester\n6) Differential Manchester"
+            << "Choose a type of Encoding\n1) Unipolar NRZ\n2) Polar NRZ\n3) NRZ Inverted\n4) Bipolar\n5) RZ\n6) Manchester\n7) Differential Manchester"
             << endl;
     cin >> choice;
     return choice;
@@ -68,6 +68,7 @@ public:
 
 class Unipolar_NRZ : Encoding {
 private:
+
     int logic_low = 0;
 
 public:
@@ -172,6 +173,42 @@ public:
     }
 };
 
+class Bipolar : Encoding {
+private:
+
+    int prev = 0;
+
+public:
+    explicit Bipolar(string sgn) : Encoding(sgn) {};
+
+    void draw() {
+        for (char c: signal) {
+            if (c == '1') {
+                one(prev);
+                prev = prev == 0 ? 1 : 0;
+            }
+            else
+                zero();
+        }
+    }
+
+    void zero() {
+        signalShift(pos_x, 100 + base);
+        signalMove(distance, 0);
+    }
+
+    void one(int num) {
+        if (num == 0) {
+            signalShift(pos_x, 100 + (logic_high/2));
+            signalMove(distance, 0);
+        }
+        else {
+            signalShift(pos_x, 100 + (logic_low/2));
+            signalMove(distance, 0);
+        }
+    }
+};
+
 class Manchester : Encoding {
 public:
     explicit Manchester(string sgn) : Encoding(sgn) {};
@@ -256,16 +293,21 @@ int main() {
             break;
         }
         case 4: {
-            RZ signal(sgn);
+            Bipolar signal(sgn);
             signal.draw();
             break;
         }
         case 5: {
-            Manchester signal(sgn);
+            RZ signal(sgn);
             signal.draw();
             break;
         }
         case 6: {
+            Manchester signal(sgn);
+            signal.draw();
+            break;
+        }
+        case 7: {
             Diff_Manchester signal(sgn);
             signal.draw();
             break;
