@@ -2,7 +2,7 @@
 
 It's just a simple Program that uses either python or C++ to plot digital Signals in simple encodings like RZ, NRZ-Linear, NRZ-Inverted, Bipolar Encoding, Manchester and Differential Manchester
 
-Made it because in true CSE Student fashion, I decided to automate in an hour what would've been a 2 minute homework assignment
+Made it because in true CSE Student fashion, I decided to automate in an hour what would've been a 2 minute homework assignment. Archived as of December 6, 2021 (when I decided to archive most of my repo's)
 
 ## Python Implementation
 
